@@ -79,7 +79,7 @@ main {
    opacity: 0.8;
    cursor: pointer;
 }
-#options button:nth-child(2) {
+#options .on{
    color: #fff;
 }
 /* dashboard */
@@ -102,6 +102,15 @@ main {
 }
 .category svg {
    width: 1rem;
+}
+.duration {
+   animation: anime 1s;
+}
+@keyframes anime {
+   0% {
+      transform: translateY(2rem);
+      opacity: 0;
+   }
 }
 .duration p:first-child {
    font-size: 1.8rem;
