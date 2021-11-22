@@ -12,7 +12,7 @@ xhr.onerror = () => {
    console.log(error);
 }
 
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('#options button');
 const stats = document.querySelectorAll('.stats');
 const keywords = {daily : 'Yesterday', weekly : 'Last Week', monthly : 'Last Month'};
 

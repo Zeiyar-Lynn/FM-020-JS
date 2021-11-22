@@ -45,6 +45,8 @@ main {
    background-color: var(--clr-blue); /**/
    padding: 1.6rem 1.5rem; /**/
    justify-content: left;
+}
+#profile h1 {
    font-size: 11px;
 }
 #profile-pic {
@@ -58,10 +60,10 @@ main {
    display: block;
    font-size: 1.4rem;
 }
-#profile span, #options button, .duration p {
+#profile h1, #options button, .duration p {
    font-weight: 300;
 }
-#profile p, #options button, .duration p:last-child {
+#profile h1, #options button, .duration p:last-child {
    color: var(--clr-p-blue);
 }
 #profile span, .stats {
@@ -70,12 +72,12 @@ main {
 #options {
    padding: 1.1rem 1.5rem;
 }
-#options button {
+#options button, .category button {
    background-color: transparent;
    border: none;
    font-size: 15px;
 }
-#options button:hover, .category svg:hover {
+#options button:hover, .category button:hover {
    opacity: 0.8;
    cursor: pointer;
 }
@@ -96,12 +98,18 @@ main {
 .category {
    margin-bottom: 8px;
 }
-.category h1 {
+.category h2 {
    font-size: 14px;
    font-weight: 500;
 }
+.category button {
+   height: 1rem;
+   width: 1.6rem;
+   padding-top: 6px;
+}
 .category svg {
-   width: 1rem;
+   vertical-align: top;
+   width: 100%;
 }
 .duration {
    animation: anime 1s;
@@ -160,7 +168,7 @@ main {
    #profile {
       display: block;
    }
-   #profile p {
+   #profile h1 {
       margin-block: 2rem;
    }
    #profile span {
